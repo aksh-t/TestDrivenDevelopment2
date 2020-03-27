@@ -1,3 +1,5 @@
+# import traceback
+
 class TestResult:
     def __init__(self):
         self.runCount = 0
@@ -29,6 +31,7 @@ class TestCase:
             method = getattr(self, self.name)
             method()
         except:
+            # print(traceback.format_exc()) 
             result.testFailed()
         self.tearDown()
 
