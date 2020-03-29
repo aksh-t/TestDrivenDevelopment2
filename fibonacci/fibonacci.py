@@ -10,6 +10,6 @@ class Fibonacci:
         return cls.fib(n - 1) + cls.fib(n - 2)
     
 def test_fibonacci():
-    cases = [[0, 0], [1, 1], [2, 1], [3, 2]]
+    cases = [[0, 0], [1, 1], [2, 1], [3, 2], [4, 3]]
     for case in cases:
         eq_(case[1], Fibonacci.fib(case[0]))
