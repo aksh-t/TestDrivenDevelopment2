@@ -7,7 +7,7 @@ class FibonacciTest:
             return 0
         if n <= 2:
             return 1
-        return FibonacciTest.fib(n - 1) + 1
+        return FibonacciTest.fib(n - 1) + FibonacciTest.fib(n - 2)
     
 def test_fibonacci():
     cases = [[0, 0], [1, 1], [2, 1], [3, 2]]
