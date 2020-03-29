@@ -8,6 +8,6 @@ class FibonacciTest:
         return 1
     
 def test_fibonacci():
-    cases = [[0, 0], [1, 1]]
+    cases = [[0, 0], [1, 1], [2, 1]]
     for case in cases:
         eq_(case[1], FibonacciTest.fib(case[0]))
