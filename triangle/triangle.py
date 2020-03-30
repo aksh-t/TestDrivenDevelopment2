@@ -4,7 +4,7 @@ def judge(a, b, c):
 
     if a == b == c:
         return 1
-    elif a == b:
+    elif a == b or a == c or b == c:
         return 2
     return 3
 
