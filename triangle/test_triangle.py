@@ -16,3 +16,15 @@ def test_scalene():
 @raises(NonTriangleException)
 def test_non_triangle():
     judge(1, 1, 100)
+
+@raises(NonTriangleException)
+def test_all_zero_length():
+    judge(0, 0, 0)
+
+@raises(NonTriangleException)
+def test_two_zero_length():
+    judge(0, 0, 1)
+
+@raises(NonTriangleException)
+def test_one_zero_length():
+    judge(0, 1, 1)
